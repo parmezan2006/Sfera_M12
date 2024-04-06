@@ -1,0 +1,206 @@
+********************************************************************************
+***                       Micro-Cap 12.2.0.0 (32 bit)                        ***
+***                                                                          ***
+***                                                                          ***
+***                       Transient Analysis of key002                       ***
+***                           26.02.2024 20:25:54                            ***
+********************************************************************************
+Limits
+======
+Maximum Run Time           40u
+Output Start Time (tstart) 0
+Maximum Time Step          0
+Number of Points           51
+Temperature                Linear 27
+Retrace Runs               1
+Run Options                Normal
+State Variables            Zero
+Operating Point            On
+Operating Point Only       Off
+Auto Scale Ranges          Off
+Accumulate Plots           Off
+Fixed Time Step            Off
+Periodic Steady State      Off
+Ignore Expression Errors   Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27
+
+Model parameters for devices of type Bipolar Junction Transistors NPN
+=====================================================================
+Instance:              Q1   
+Using model:      2N2222A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BF               200.601    
+BR               155.257m   
+CJC               36.644p   
+CJE               35.353p   
+CJS                0.000 (*)
+EG                 1.110 (*)
+FC               500.000m(*)
+GAMMA             10.000p(*)
+IKF                1.771    
+IKR              995.298    
+IRB                0.000 (*)
+IS                10.017f   
+ISC                9.153p   
+ISE              999.157f   
+ISS                0.000 (*)
+ITF                9.910m   
+KF                 0.000 (*)
+MJC              558.066m   
+MJE              642.880m   
+MJS                0.000 (*)
+NC                 2.000 (*)
+NE                 1.834    
+NF               979.990m   
+NK               500.000m(*)
+NR                 1.000 (*)
+NS                 1.000 (*)
+PTF                0.000 (*)
+QCO                0.000 (*)
+QUASIMOD           0.000 (*)
+RB                 0.000 (*)
+RBM                0.000 (*)
+RC                 0.000 (*)
+RCO                0.000 (*)
+RE               668.817m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TF               336.941p   
+TR                 2.263u   
+TRB1               0.000 (*)
+TRB2               0.000 (*)
+TRC1               0.000 (*)
+TRC2               0.000 (*)
+TRE1               0.000 (*)
+TRE2               0.000 (*)
+TRM1               0.000 (*)
+TRM2               0.000 (*)
+VAF              100.000    
+VAR                0.000 (*)
+VG                 1.206 (*)
+VJC              700.000m   
+VJE              700.000m   
+VJS              750.000m(*)
+VO                10.000 (*)
+VTF               10.000    
+XCJC               1.000 (*)
+XTB                0.000 (*)
+XTF              499.994m   
+XTI                3.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+UOUT         20.000   2           372.696n  UIN           0.000  
+4            22.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                 Q1
+Using model:         2N2222A
+
+Beta Terms:
+BETADC               -1.174 
+BETAAC               13.014m
+
+Capacitance Terms:
+CPI                  35.353p
+CMU                   5.535p
+CBX                   0.000 
+CJS                   0.000 
+
+Conductance Terms:
+GM                  274.147f
+
+Current Terms:
+IB                 -138.036p
+IC                  162.048p
+
+Resistance Terms:
+RPI                  47.470G
+RX                    0.000 
+RO                  714.235G
+
+Voltage Terms:
+VBE                 372.696n
+VBC                 -20.000 
+VCE                  20.000 
+
+Frequency Terms:
+FT                    1.067m
+
+Power DC Terms:
+PD                    3.241n
+PS                    0.000 
+
+DC Pin Currents:
+Ib                 -138.036p
+Ic                  162.048p
+Ie                  -24.012p
+Is                    0.000 
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+vbe                   0.000 
+vce                   0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1              R2              R3
+V                     20.000        -372.696n          2.000 
+Power DC Terms:
+PD                    71.429m          0.051f          7.143m
+
+DC Pin Currents:
+Ir                     3.571m       -138.036p          3.571m
+
+Device Variables:
+tc1                    0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                   -372.696n
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                 V1              V2
+V                     0.000          22.000 
+Power DC Terms:
+PG                    0.000          78.571m
+
+DC Pin Currents:
+ISource             138.036p         -3.571m
+
+
